@@ -1,0 +1,173 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2183 >>
+stream
+BT
+/F1 10 Tf
+54 742 Td
+14 TL
+(Student Score Analyzer) Tj
+T*
+() Tj
+T*
+(Representative Program Output) Tj
+T*
+() Tj
+T*
+(text) Tj
+T*
+(How many scores will be entered? 0) Tj
+T*
+(The number of scores must be at least 1.) Tj
+T*
+(How many scores will be entered? 4) Tj
+T*
+(Enter score 1 \(0-100\): 95) Tj
+T*
+(Enter score 2 \(0-100\): 72) Tj
+T*
+(Enter score 3 \(0-100\): 88) Tj
+T*
+(Enter score 4 \(0-100\): 60) Tj
+T*
+(Original dynamic array values: 95 72 88 60) Tj
+T*
+(Minimum: 60) Tj
+T*
+(Maximum: 95) Tj
+T*
+(Average: 78.75) Tj
+T*
+(Scores greater than average: 2) Tj
+T*
+(Pointer arithmetic demonstration: 95 72 88) Tj
+T*
+(Vector values using iterators: 95 72 88 60) Tj
+T*
+(Enter a target score to search for: 88) Tj
+T*
+(88 is present in the vector.) Tj
+T*
+(Sorted vector: 60 72 88 95) Tj
+T*
+(Vector minimum: 60) Tj
+T*
+(Vector maximum: 95) Tj
+T*
+(Vector size: 4) Tj
+T*
+(Vector capacity: 4) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(Written Answers) Tj
+T*
+() Tj
+T*
+(1. What is the difference between the pointer scores and the expression *scores?) Tj
+T*
+() Tj
+T*
+(scores stores the memory address of the first element in the dynamically allocated array.) Tj
+T*
+(*scores dereferences that address and produces the integer value stored in the first) Tj
+T*
+(element. The pointer can be changed to point somewhere else; the dereferenced expression is) Tj
+T*
+(a score value.) Tj
+T*
+() Tj
+T*
+(2. Why must memory created with new[] be released with delete[] rather than delete?) Tj
+T*
+() Tj
+T*
+(new[] creates an array allocation, so delete[] tells C++ to release the complete array) Tj
+T*
+(allocation correctly. Using delete on memory created with new[] is undefined behavior and) Tj
+T*
+(can cause incomplete cleanup or heap corruption.) Tj
+T*
+() Tj
+T*
+(3. What is a memory leak, and how does this program prevent one?) Tj
+T*
+() Tj
+T*
+(A memory leak occurs when a program loses the pointer to allocated memory without releasing) Tj
+T*
+(that memory. This program copies the values into the vector, calls delete[] scores exactly) Tj
+T*
+(once, and then sets scores to nullptr so the pointer no longer refers to released storage.) Tj
+T*
+() Tj
+T*
+(4. Why is vector generally safer than a manually allocated array?) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 775 >>
+stream
+BT
+/F1 10 Tf
+54 742 Td
+14 TL
+() Tj
+T*
+(An STL vector manages its own memory and automatically releases it when the vector leaves) Tj
+T*
+(scope. It also provides size\(\), checked access through at\(\), and standard algorithms,) Tj
+T*
+(reducing the risk of leaks, mismatched deallocation, and incorrect size tracking.) Tj
+T*
+() Tj
+T*
+(5. What can happen to existing vector iterators when an insertion causes reallocation?) Tj
+T*
+() Tj
+T*
+(When a vector runs out of capacity and reallocates, it moves its elements to a new memory) Tj
+T*
+(location. Existing iterators, pointers, and references to the old elements are invalidated) Tj
+T*
+(and must not be used. If no reallocation occurs, insertion still invalidates iterators at) Tj
+T*
+(or after the insertion position.) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000002482 00000 n 
+0000002608 00000 n 
+0000003434 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3504
+%%EOF
